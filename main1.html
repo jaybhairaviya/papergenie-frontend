@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paperginie</title>
+	<link rel="stylesheet" type="text/css" href="sytlemain1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+</head>
+<body>
+<div class="main-container">
+	<h1 class="heading">PaperGenie</h1>
+	<h3 class="small-heading">We know you never write < <img class="pulse animated infinite" src="img/books1.png" style="position: relative;top:8px"> ></h4>
+	<form class="input-form">
+	<div class="input-container">
+		<input type="text" name="roll_no" placeholder="Admission No" class="roll_no"><input type="submit" name="submit" class="submit" value="->">
+	</div>
+	</form>
+	<footer>
+		<h4 class="footer-text">Made with lots of <<img class="pulse animated infinite" src="img/like.png" style="position: relative;top:8px">> by Jay Bhairaviya</h4>
+	</footer>
+	<div class="modal" id="modal">
+		<h1 class="modal-heading"><span class="nit" style="color: #9dc224;">NIT </span>सूरत</h1>
+		<h2 class="sub-heading"><span class="paper">पेपर</span>genie</h2>
+		<div class="buttons-main-container">
+			<div class="button-container">
+				<button class="nav-button" id="download">Download</button>
+			</div>
+			<div class="button-container">
+				<button class="nav-button" id="contribute">Contribute</button>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	var download_button = document.getElementById("download");
+	var modal = document.getElementById("modal");
+	var heading = document.getElementsByClassName('heading')[0];
+	var small_heading = document.getElementsByClassName('small-heading')[0];
+	var form = document.getElementsByClassName('input-container')[0];
+	download_button.addEventListener("click",function(){
+		console.log("asdas")
+		modal.classList.add('slideOutLeft');
+		modal.classList.add('animated')
+		heading.classList.add('zoomIn','animated')
+		small_heading.classList.add('slideInUp','animated')
+		form.classList.add('rubberBand','animated')
+	});
+	
+</script>
+</html>
